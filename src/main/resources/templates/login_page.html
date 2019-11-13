@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<meta charset="UTF-8">
+
+<head>
+<title>首页</title>
+</head>
+<body>
+
+<form action="/userlogin" method="post">
+	用户名:<br> <input type="text" name="username" value="请输入用户名"/><br><!--br是换行符-->
+	密码： <br> <input type="password" name="password"/><br><!--type如果为passwprd，则内容不可见-->
+	<input type="submit" th:value="登录"/><!--submit是表单提交-->
+</form>
+<!--TODO:--><p style="color: red" th:text="${msg}" ></p><!--报错-->
+
+</body>
+
+</html>
